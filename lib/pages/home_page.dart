@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../models/note.dart';
@@ -21,13 +20,13 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
       appBar: const CustomAppBar(),
       body: FutureBuilder(
-        future: widget.dbService.getNotes(), 
+        future: widget.dbService.getNotes(),
         builder: (context, snapshot) {
-          if(snapshot.connectionState == ConnectionState.waiting) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
-          } else if(snapshot.hasError) {
+          } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
-          } else if(snapshot.hasData && snapshot.data != null) {
+          } else if (snapshot.hasData && snapshot.data != null) {
             return noteCardBuilder(snapshot.data!);
           } else {
             return const Center(child: Text("Nothing Notes"));
@@ -37,8 +36,8 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () async {
           await Navigator.pushNamed(context, '/addnote');
-          setState(() { });
-        }, 
+          setState(() {});
+        },
         label: const Text("Add Note"),
         icon: const Icon(Icons.note_add_rounded),
       ),
@@ -52,10 +51,9 @@ class _HomePageState extends State<HomePage> {
         return NoteCard(
           note: notes[index],
           dbService: widget.dbService,
-          onUpdateCallback: () => setState((){}),
+          onUpdateCallback: () => setState(() {}),
         );
       },
     );
   }
 }
-

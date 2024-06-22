@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
+class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});
 
   @override
@@ -17,26 +16,22 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
               Text(
                 "Notes",
                 style: Theme.of(context)
-                  .textTheme
-                  .displayMedium!
-                  .copyWith(fontWeight: FontWeight.bold),
+                    .textTheme
+                    .displayMedium!
+                    .copyWith(fontWeight: FontWeight.bold),
               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 5),
                 child: Text(
                   " app",
-                  style: Theme.of(context)
-                    .textTheme
-                    .bodyMedium,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
             ],
           ),
           Text(
             " Safeguard Your Ideas with NotesApp",
-            style: Theme.of(context)
-              .textTheme
-              .bodyMedium,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ],
       ),
@@ -53,7 +48,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
       ],
     );
   }
-  
+
   @override
   Size get preferredSize => const Size.fromHeight(100);
 }

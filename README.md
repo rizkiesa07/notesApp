@@ -1,13 +1,18 @@
 # NotesApp Mobile
 
-NotesApp is a note-taking application that allows users to create, edit, and delete their notes. This application uses Flutter local storage with sqflite to store and retrieve note data locally on the device.
+Abank adalah aplikasi android yang dirancang untuk membantu pengguna mengelola keuangan pribadi mereka dengan mudah dan efektif.
 
 ## Features
 
-- **Create New Note**: Users can create new notes with a title and content.
-- **Edit Note**: Users can edit existing notes.
-- **Delete Note**: Users can delete notes that are no longer needed.
-- **View Note Details**: Users can view the full details of each note.
+- **Melihat Pemasukan dan Pengeluaran**: Users bisa melihat Pemasukan dan Pengeluaran yang telah tercatat.
+- **Membuat Pencatatan Transaksi Keuangan**: Users dapat menambahkan catatan keuangan mereka.
+- **Edit Pencatatan Transaksi**: Users bisa mengedit catatan keuangan mereka yang sudah ada sebelumnya.
+- **Hapus Pencatatan Transaksi**: Users bisa menghapus catatan keuangan yang tidak dibutuhkan lagi.
+- **CRUD Kategori**: Users bisa CRUD kategori.
+
+## App Development
+- **Fitur Merekap Jumlah Pemasukan dan Pengeluaran**: Sekarang aplikasi sudah bisa merekap Pemasukan dan Pengeluaran.
+- **Perbaikan Bug**: Mengurangi Bug yang ada.
 
 ## Technologies Used
 
@@ -19,38 +24,21 @@ NotesApp is a note-taking application that allows users to create, edit, and del
 - **sqflite**: To handle local database storage.
 - **path_provider**: To find commonly used locations on the filesystem.
 - **initl**: To format dates and other localization needs.
-
-
-## Installation
-
-1. **Clone this Repository**
-    ```bash
-    git clone https://github.com/adeiskandarzulkarnaen/notesappmobile.git
-    cd notesappmobile
-    ```
-
-2. **Install Dependencies**
-    ```bash
-    flutter pub get
-    ```
-
-3. **Run the Application**
-    ```bash
-    flutter run
-    ```
-
-## Contributions
-
-Contributions are highly welcomed! If you have ideas for improving this application or find any bugs, please create an issue or pull request in this repository.
-
-## License
-
-This application is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+- **cupertino_icons**: 
+- **drift**: 
+- **sqlite3_flutter_libs**:
+- **path_provider**: 
+- **path**: 
+- **calendar_appbar**: 
+- **google_fonts**: 
+- **flutter_lints**:
+- **drift_dev**: 
+- **build_runner**:
 
 ## Project Thumbnail 
 
 <p float="left">
-    <img src="./docs/img/notesapp.png" alt="notesapp" width="250">
+    <img src="./docs/img/about_page.png" alt="about_page" width="250">
     &nbsp;&nbsp;
     <img src="./docs/img/home_page.png" alt="home_page" width="250">
     &nbsp;&nbsp;
